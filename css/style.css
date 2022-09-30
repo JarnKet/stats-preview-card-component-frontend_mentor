@@ -101,12 +101,17 @@ body {
   width: 100%;
 
   grid-area: banner;
-  background-image: url(../images/image-header-desktop.jpg);
-  background-size: cover;
+  background-color: var(--violet);
 
   position: relative;
 }
-.violet-filter {
+.banner-pic {
+  content: url(../images/image-header-desktop.jpg);
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: multiply;
+}
+/* .violet-filter {
   position: absolute;
   top: 0;
   left: 0;
@@ -114,7 +119,7 @@ body {
   bottom: 0;
 
   background-color: hsla(278, 81%, 22%, 0.627);
-}
+} */
 
 .attribution {
   position: absolute;
@@ -148,7 +153,9 @@ body {
   }
   .banner {
     height: 250px;
-    background-size: contain;
+  }
+  .banner-pic {
+    content: url(../images/image-header-mobile.jpg);
   }
   .info {
     height: 550px;
